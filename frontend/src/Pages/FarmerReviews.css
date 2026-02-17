@@ -1,0 +1,55 @@
+.farmer-reviews-page {
+  padding: 30px;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1b4332;
+}
+
+.page-subtitle {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 25px;
+}
+
+.empty-text {
+  margin-top: 40px;
+  text-align: center;
+  color: #777;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.review-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d6a4f;
+}
+
+.rating {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.comment {
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.reviewer {
+  font-size: 13px;
+  color: #555;
+}

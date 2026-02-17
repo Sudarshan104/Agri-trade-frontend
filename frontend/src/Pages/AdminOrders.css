@@ -1,0 +1,44 @@
+/* Reuse AdminUsers layout styles */
+@import "./AdminUsers.css";
+
+/* Order status colors */
+.status.processing {
+  color: #92400e;
+  font-weight: 600;
+}
+
+.status.delivered {
+  color: #166534;
+  font-weight: 600;
+}
+
+.status.cancelled {
+  color: #991b1b;
+  font-weight: 600;
+}
+.order-filters {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+  flex-wrap: wrap;
+}
+
+.order-filters button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.order-filters button:hover {
+  background: #f3f4f6;
+}
+
+.order-filters button.active {
+  background: #2d5a3d;
+  color: white;
+  border-color: #2d5a3d;
+}

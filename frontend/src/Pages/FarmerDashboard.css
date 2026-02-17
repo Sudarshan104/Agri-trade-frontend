@@ -1,0 +1,229 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* ================= DASHBOARD LAYOUT ================= */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f7f6; /* ✅ CLEAN LIGHT BACKGROUND */
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #1b4332, #2d6a4f);
+  color: #ffffff;
+  padding: 25px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/* LOGO */
+.sidebar-logo {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* MENU */
+.sidebar-menu {
+  list-style: none;
+}
+
+.sidebar-menu li {
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.sidebar-menu li:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(4px);
+}
+
+/* ACTIVE */
+.sidebar-menu .active {
+  background: rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+}
+
+/* LOGOUT */
+.sidebar-menu .logout {
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-menu .logout:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ================= MAIN CONTENT ================= */
+.dashboard-main {
+  margin-left: 260px;
+  padding: 40px;
+  width: 100%;
+}
+
+/* ================= WELCOME CARD ================= */
+.welcome-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.welcome-card:hover {
+  transform: translateY(-4px);
+}
+
+.welcome-card h1 {
+  color: #1b4332;
+  margin-bottom: 6px;
+}
+
+.welcome-card p {
+  color: #666;
+}
+
+.welcome-card .notification-bell {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.welcome-card .verification-badge {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+/* ================= STATS ================= */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card h3 {
+  font-size: 30px;
+  color: #2d6a4f;
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ================= CONTENT CARD (ADD PRODUCT / PRODUCTS / ORDERS) ================= */
+.content-card {
+  background: #ffffff;
+  max-width: 520px;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-4px);
+}
+
+.content-card h2 {
+  text-align: center;
+  color: #1b4332;
+  margin-bottom: 25px;
+}
+
+/* ================= FORM ================= */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.25s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2d6a4f;
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.2);
+}
+
+/* ================= BUTTON ================= */
+.add-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #2d6a4f, #1b4332);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.add-btn:disabled {
+  background: #9dbbb0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .dashboard-main {
+    margin-left: 0;
+  }
+}

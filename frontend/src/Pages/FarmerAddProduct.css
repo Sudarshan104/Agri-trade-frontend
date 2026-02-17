@@ -1,0 +1,126 @@
+/* ================= PAGE WRAPPER ================= */
+.add-product-page {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7fb;
+  padding: 20px;
+}
+
+/* ================= ADD PRODUCT CARD ================= */
+.content-card {
+  background: #ffffff;
+  max-width: 500px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ================= TITLE ================= */
+.content-card h2 {
+  text-align: center;
+  color: #1b4332;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ================= FORM GROUP ================= */
+.form-group {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #333;
+}
+
+/* ================= INPUTS ================= */
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2d6a4f;
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.2);
+}
+
+/* ================= CATEGORY DROPDOWN ================= */
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1b4332;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  /* remove default arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* custom arrow */
+.form-group::after {
+  content: "▾";
+  position: absolute;
+  right: 16px;
+  top: 44px;
+  font-size: 14px;
+  color: #2d6a4f;
+  pointer-events: none;
+}
+
+/* focus & hover */
+.form-group select:focus {
+  outline: none;
+  border-color: #2d6a4f;
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.2);
+}
+
+.form-group select:hover {
+  border-color: #2d6a4f;
+}
+
+/* ================= BUTTON ================= */
+.add-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #2d6a4f, #1b4332);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.add-btn:disabled {
+  background: #9dbbb0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}

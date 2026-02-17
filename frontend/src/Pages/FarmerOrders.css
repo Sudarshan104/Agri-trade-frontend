@@ -1,0 +1,97 @@
+/* ================= PAGE ================= */
+.farmer-orders-page {
+  padding: 30px;
+}
+
+/* ================= HEADER ================= */
+.orders-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 6px;
+}
+
+.orders-subtitle {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 25px;
+}
+
+/* ================= EMPTY ================= */
+.no-orders {
+  text-align: center;
+  color: #6c757d;
+  margin-top: 40px;
+}
+
+/* ================= GRID ================= */
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* ================= CARD ================= */
+.order-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+}
+
+/* ================= CONTENT ================= */
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d6a4f;
+  margin-bottom: 12px;
+}
+
+.order-info p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.order-info span {
+  font-weight: 600;
+  color: #333;
+}
+
+/* ================= STATUS ================= */
+.order-status {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* STATUS COLORS */
+.order-status.placed {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.order-status.processing {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.order-status.delivered {
+  background: #d4edda;
+  color: #155724;
+}
+
+.order-status.cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}

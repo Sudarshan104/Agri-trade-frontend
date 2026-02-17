@@ -1,0 +1,97 @@
+.admin-verification-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-verification-page h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.admin-verification-page p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.verification-table {
+  overflow-x: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.verification-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.verification-table th,
+.verification-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.verification-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #333;
+}
+
+.verification-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.verification-table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.verification-table a:hover {
+  text-decoration: underline;
+}
+
+.approve-btn,
+.reject-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.approve-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.approve-btn:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.reject-btn:hover:not(:disabled) {
+  background-color: #c82333;
+}
+
+.approve-btn:disabled,
+.reject-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.no-data {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 40px;
+}

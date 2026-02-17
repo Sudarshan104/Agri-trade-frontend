@@ -1,0 +1,23 @@
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: Arial;
+}
+
+.navbar {
+  padding: 10px;
+  background: #2d6a4f;
+}
+
+.navbar a, .navbar button {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.form {
+  padding: 30px;
+}

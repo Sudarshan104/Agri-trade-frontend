@@ -1,0 +1,102 @@
+/* ================= SHELL ================= */
+.admin-shell {
+  margin-top: 64px; /* navbar height */
+  min-height: calc(100vh - 64px);
+  background: #f4f7fb;
+}
+
+/* ================= SIDEBAR ================= */
+.admin-sidebar {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 320px;
+  height: calc(100vh - 64px);
+  background: linear-gradient(180deg, #263238, #37474f);
+  color: white;
+  padding: 20px 14px;
+  transition: width 0.25s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+/* COLLAPSED */
+.admin-sidebar.collapsed {
+  width: 72px;
+}
+
+/* Toggle */
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.sidebar-logo {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.admin-sidebar.collapsed .sidebar-logo {
+  font-size: 22px;
+}
+
+/* Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar-menu li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.icon {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+.text {
+  margin-left: 14px;
+  white-space: nowrap;
+}
+
+.admin-sidebar.collapsed .text {
+  display: none;
+}
+
+.admin-sidebar.collapsed li {
+  justify-content: center;
+}
+
+/* ================= MAIN CONTENT ================= */
+.admin-main {
+  margin-left: 280px;               /* 🔥 THIS IS THE FIX */
+  padding: 30px;
+  min-height: calc(100vh - 64px);
+  overflow-y: auto;
+  transition: margin-left 0.25s ease;
+}
+
+/* When sidebar collapses */
+.admin-sidebar.collapsed ~ .admin-main {
+  margin-left: 72px;
+}

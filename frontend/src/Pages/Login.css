@@ -1,0 +1,131 @@
+/* ================= GLOBAL RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= PAGE BACKGROUND ================= */
+.login-container {
+  min-height: 100vh;
+
+  /* 🌾 FARM LAND BACKGROUND WITH GREEN OVERLAY */
+  background:
+    linear-gradient(
+      rgba(0, 80, 40, 0.75),
+      rgba(0, 80, 40, 0.75)
+    ),
+    url("/images/farmland.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= LOGIN CARD ================= */
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  width: 360px;
+  padding: 35px 30px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ================= TITLE ================= */
+.login-card h2 {
+  font-size: 26px;
+  color: #1e8449;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+/* ================= SUBTITLE ================= */
+.login-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 22px;
+}
+
+/* ================= ERROR MESSAGE ================= */
+.login-card p {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* ================= INPUT FIELDS ================= */
+.login-card input {
+  width: 100%;
+  padding: 11px 12px;
+  margin-bottom: 14px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.2);
+}
+
+/* ================= LOGIN BUTTON ================= */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #27ae60, #1e8449);
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.login-card button:hover {
+  background: linear-gradient(135deg, #1e8449, #166f3b);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= FOOTER TEXT ================= */
+.login-footer {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 420px) {
+  .login-card {
+    width: 90%;
+    padding: 28px 22px;
+  }
+
+  .login-card h2 {
+    font-size: 22px;
+  }
+}

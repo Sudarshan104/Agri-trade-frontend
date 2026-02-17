@@ -1,0 +1,143 @@
+.products-container {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.products-title {
+  font-size: 26px;
+  color: #1b4332;
+}
+
+.products-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.no-products {
+  color: #999;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: #f9f9f9;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  transition: transform 0.25s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.no-image {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaeaea;
+  color: #777;
+}
+
+.product-content {
+  padding: 15px;
+}
+
+.product-name {
+  font-size: 16px;
+  color: #1b4332;
+  margin-bottom: 6px;
+}
+
+.product-detail {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-detail span {
+  font-weight: 600;
+}
+
+/* ================= BUTTON UI ONLY ================= */
+
+/* Edit Button */
+.btn-edit {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1b4332, #2d6a4f);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(27, 67, 50, 0.25);
+}
+
+.btn-edit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(27, 67, 50, 0.3);
+}
+
+.btn-edit:active {
+  transform: translateY(0px);
+}
+
+/* Save Button */
+.btn-save {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2d6a4f, #40916c);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 14px rgba(45, 106, 79, 0.25);
+}
+
+.btn-save:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(45, 106, 79, 0.3);
+}
+
+/* Cancel Button */
+.btn-cancel {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #444;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-cancel:hover {
+  background: #f2f2f2;
+  border-color: #aaa;
+  transform: translateY(-1px);
+}

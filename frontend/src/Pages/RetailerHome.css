@@ -1,0 +1,243 @@
+/* ===========================
+   PAGE / DASHBOARD WRAPPER
+=========================== */
+.retailer-dashboard {
+  padding: 24px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+/* ===========================
+   WELCOME SECTION
+=========================== */
+.retailer-welcome {
+  margin-bottom: 18px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb, #3b82f6);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.retailer-welcome h1 {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 0 4px 0;
+}
+
+.retailer-welcome p {
+  margin: 0;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* ===========================
+   DASHBOARD CARDS GRID
+=========================== */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+/* ===========================
+   CARD STYLING
+=========================== */
+.dashboard-card {
+  background: white;
+  border-radius: 18px;
+  padding: 16px;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid #e8eef7;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+  transition: all 0.22s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-card::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 110px;
+  height: 110px;
+  background: rgba(59, 130, 246, 0.12);
+  border-radius: 50%;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.dashboard-card h3 {
+  font-size: 22px;
+  font-weight: 900;
+  margin: 0 0 6px 0;
+  color: #0f172a;
+}
+
+.dashboard-card p {
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ===========================
+   SPECIAL CARD VARIANTS
+=========================== */
+.dashboard-card.processing {
+  border-left: 6px solid #f59e0b;
+}
+
+.dashboard-card.cancelled {
+  border-left: 6px solid #ef4444;
+}
+
+.dashboard-card.amount {
+  border-left: 6px solid #22c55e;
+}
+
+/* =========================================================
+   ✅ ANALYTICS (GRAPHS UI IMPROVED ONLY)
+========================================================= */
+.analytics-section {
+  margin-top: 10px;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid #e8eef7;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
+}
+
+.analytics-title {
+  font-size: 18px;
+  font-weight: 900;
+  color: #0f172a;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+}
+
+/* grid layout */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 14px;
+}
+
+/* ✅ chart card improved */
+.analytics-box {
+  border-radius: 18px;
+  border: 1px solid #e8eef7;
+  background: linear-gradient(180deg, #fbfdff, #f8fafc);
+  padding: 14px;
+  min-height: 360px;
+
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle corner decoration (premium feel) */
+.analytics-box::before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(37, 99, 235, 0.10);
+}
+
+.analytics-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.10);
+}
+
+.analytics-box h4 {
+  font-size: 14px;
+  font-weight: 900;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+}
+
+/* ✅ chart container area: clean white background */
+.analytics-box > div {
+  margin-top: 6px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #edf2f7;
+  padding: 10px;
+}
+
+/* ✅ fixed chart height (for consistent layout) */
+.chart-wrap {
+  width: 100%;
+  height: 290px;
+}
+
+/* ✅ improve recharts default text look */
+.recharts-text {
+  font-size: 12px !important;
+  fill: #334155 !important;
+  font-weight: 700;
+}
+
+.recharts-legend-item-text {
+  color: #334155 !important;
+  font-weight: 800 !important;
+  font-size: 12px !important;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+/* ✅ tooltip style (nice modern tooltip) */
+.recharts-default-tooltip {
+  border-radius: 14px !important;
+  border: 1px solid #e8eef7 !important;
+  padding: 10px 12px !important;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14) !important;
+}
+
+/* ===========================
+   RESPONSIVE (MOBILE)
+=========================== */
+@media (max-width: 600px) {
+  .analytics-section {
+    padding: 14px;
+  }
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-box {
+    min-height: 330px;
+  }
+}
+
+@media (max-width: 480px) {
+  .retailer-dashboard {
+    padding: 14px;
+  }
+
+  .retailer-welcome {
+    padding: 16px;
+  }
+
+  .retailer-welcome h1 {
+    font-size: 20px;
+  }
+
+  .dashboard-card {
+    text-align: center;
+  }
+}

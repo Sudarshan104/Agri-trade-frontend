@@ -1,0 +1,116 @@
+.document-upload-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.document-upload-page h2 {
+  margin-bottom: 8px;
+  color: #1e293b;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.document-upload-page p {
+  margin-bottom: 30px;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.upload-form {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 30px 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upload-form:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  background-color: #f9fafb;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="file"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  background-color: #ffffff;
+}
+
+.upload-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: white;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.upload-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+}
+
+.upload-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f766e;
+  background: #ecfdf5;
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #a7f3d0;
+  max-width: 520px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .upload-form {
+    padding: 22px 18px;
+  }
+
+  .document-upload-page h2 {
+    font-size: 22px;
+  }
+}
